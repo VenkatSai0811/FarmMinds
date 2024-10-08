@@ -1,0 +1,328 @@
+/* General Homepage container */
+.homepage {
+    margin-top: 1600px; /* Adjust this value based on your navbar height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cover Section */
+.cover-section {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (height/width = 9/16 * 100) */
+    overflow: hidden;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fade-in-out 10s infinite;
+    z-index: -1;
+}
+
+/* Animation for fading in and out images */
+@keyframes fade-in{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    
+}
+
+/* Text Box with Fade In and Fade Out Animation */
+.text-box {
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start hidden */
+    animation: fade-in 3s ease-in-out forwards, fade-out 6s ease-in-out forwards 20s; /* Fade-in then fade-out */
+}
+
+/* Keyframes for fade-in */
+@keyframes fade-in {
+    0% {
+        opacity: 0; /* Start fully transparent */
+    }
+    100% {
+        opacity: 1; /* Fully opaque */
+    }
+}
+
+/* Keyframes for fade-out */
+@keyframes fade-out {
+    0% {
+        opacity: 1; /* Fully opaque */
+    }
+    100% {
+        opacity: 0; /* Fully transparent */
+    }
+}
+
+/* Welcome Text Style */
+.welcome-text {
+    
+    font-size: 4vw; /* Adjust font size as needed */
+    color: white;
+    font-weight: bolder;
+    opacity: 0; /* Start hidden */
+    animation: slide-up 1s ease-in-out forwards, slide-down 1s ease-in-out forwards 6s; /* Slide-up and slide-down */
+}
+
+/* Keyframes for sliding up */
+@keyframes slide-up {
+    0% {
+        transform: translateY(20px); /* Start slightly below */
+        opacity: 0; /* Start fully transparent */
+    }
+    100% {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* Fully opaque */
+    }
+}
+
+/* Keyframes for sliding down and fading out */
+@keyframes slide-down {
+    0% {
+        transform: translateY(0); /* Start at original position */
+        opacity: 1; /* Fully opaque */
+    }
+    100% {
+        transform: translateY(20px); /* Slide down slightly */
+        opacity: 0; /* Fully transparent */
+    }
+}
+
+
+
+/* Scrolling Section */
+.scroll-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f7f9f7;
+    flex-direction: row; /* Change to row for side-by-side layout */
+    height: 400px; /* Set a height for the section */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%; /* Ensure the wrapper takes full height */
+}
+
+/* Left Side with Image */
+.left-side {
+    flex: 1; /* Occupies half of the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    max-width: 100%; /* Set max width to ensure it fits */
+    height: auto; /* Maintain aspect ratio */
+    
+    
+}
+
+/* Right Side with Text */
+.right-side {
+    flex: 1; /* Occupies the other half */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items vertically */
+    padding: 10px;
+}
+
+.welcome-big {
+    font-size: 2.5vw; /* Reduce font size for the welcome text */
+    font-weight: bold;
+    color: black; /* Set welcome text color to black */
+}
+
+.green-text {
+    color: #40ca40; /* Green color for FarmMinds */
+}
+
+.description {
+    font-size: 1.5vw; /* Reduce description font size */
+    margin-top: 10px; /* Slightly smaller margin */
+    text-align: center; /* Center the description */
+}
+
+/* Optional: Add some responsiveness */
+@media (max-width: 768px) {
+    .welcome-big {
+        font-size: 5vw; /* Adjust for smaller screens */
+    }
+    .description {
+        font-size: 4vw; /* Adjust for smaller screens */
+    }
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.offer-title {
+    margin: 20px 0;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the products */
+    gap: 20px; /* Gap between product items */
+}
+
+/* Product Box */
+.product-box {
+    position: relative; /* Relative to allow absolute positioning for text */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    overflow: hidden; /* Ensure overflow is hidden for rounded corners */
+}
+
+.product-box:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Image Styling */
+.product-box img {
+    width: 100%;
+    height: 100%; /* Ensure image fills the box height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire box */
+    border-radius: 5px; /* Optional: round the corners of the image */
+}
+
+/* Text Overlay Styling */
+.product-text {
+    position: absolute;
+    bottom: -50px; /* Start text off-screen (below the product box) */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the text */
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    transition: bottom 0.4s ease-out; /* Smooth sliding animation */
+}
+
+/* Hover effect to bring text up */
+.product-box:hover .product-text {
+    bottom: 0; /* Bring text up to the bottom of the image */
+}
+
+
+/* Seasonal Favorites Section */
+.seasonal-favorites {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .favorites-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+
+  }
+  
+  .slider {
+    overflow: hidden;  /* Hides the overflow of the sliding content */
+    width: 100%;
+    position: relative;
+  }
+  
+  .slide-track {
+    display: flex;
+    width: calc(250px * 6); /* Adjust width based on the number of items */
+    animation: scroll 30s linear infinite;  /* Controls the sliding effect */
+  }
+  
+  .product-item {
+    flex: 0 0 250px;  /* Each product takes up 250px of space */
+    margin-right: 20px;  /* Space between products */
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: black;
+    font: bold;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);  /* Start from the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to the left */
+    }
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .product-item {
+      flex: 0 0 150px;  /* Smaller products on mobile */
+    }
+  
+    .slide-track {
+      width: calc(150px * 6);  /* Adjust width for mobile view */
+    }
+  }
+  
+/* Footer styles */
+.homepage-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #61c561; /* Green color for footer */
+    color: white;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

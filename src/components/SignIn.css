@@ -1,0 +1,65 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Sign-in container behind the form */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Sign-in box styling */
+.signin-box {
+  background-color: rgba(106, 210, 101, 0.8); /* White background with transparency */
+  padding: 30px; /* Padding around the content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width: 400px; /* Increased width for larger container */
+  text-align: center; /* Center text within the boxes */
+}
+
+/* Input fields styling */
+input {
+  width: 100%; /* Full width */
+  padding: 12px; /* Padding inside input fields */
+  margin: 10px 0; /* Space between input fields */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners for input */
+}
+
+/* Button styling */
+button {
+  width: 100%; /* Full width */
+  padding: 12px; /* Padding inside buttons */
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #ededed; /* Darker green on hover */
+}
+
+/* Link styling inside form */
+a {
+  color: #000000; /* Green link color */
+  text-decoration: none; /* No underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

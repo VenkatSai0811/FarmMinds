@@ -1,0 +1,90 @@
+/* General styling */
+.landing-page-container {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow: hidden; /* Prevent scrolling for this page only */
+    display: flex;
+    flex-direction: column;
+    background-color: #97C496;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Fixes the page in place */
+    top: 0;
+    left: 0;
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Button styles */
+.role-button {
+    background-color: white;
+    border: 2px solid #97C496;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-position 0.4s ease;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #22bd1f 50%, #000000 50%);
+    background-position: right bottom;
+}
+
+.role-button:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+/* Updated Sign-in form styling */
+.signin-form {
+    width: 400px;
+    padding: 40px;
+    background-color: rgba(151, 196, 150, 0.7); /* Semi-transparent background */
+    border: 1px solid #97C496;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.signin-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signin-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #97C496;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.signin-button:hover {
+    background-color: #2ece19;
+}
