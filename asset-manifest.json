@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FarmMinds/static/css/main.7f986a8b.css",
-    "main.js": "/FarmMinds/static/js/main.c0d955b2.js",
+    "main.js": "/FarmMinds/static/js/main.203ffa8f.js",
     "static/js/453.69f3745b.chunk.js": "/FarmMinds/static/js/453.69f3745b.chunk.js",
     "static/media/cover2.jpg": "/FarmMinds/static/media/cover2.b20effc4937036e1e403.jpg",
     "static/media/carrots.jpg": "/FarmMinds/static/media/carrots.e5ff5adbd961e025250e.jpg",
@@ -26,11 +26,11 @@
     "static/media/nuts.jpeg": "/FarmMinds/static/media/nuts.b35ca94c175521a038f8.jpeg",
     "index.html": "/FarmMinds/index.html",
     "main.7f986a8b.css.map": "/FarmMinds/static/css/main.7f986a8b.css.map",
-    "main.c0d955b2.js.map": "/FarmMinds/static/js/main.c0d955b2.js.map",
+    "main.203ffa8f.js.map": "/FarmMinds/static/js/main.203ffa8f.js.map",
     "453.69f3745b.chunk.js.map": "/FarmMinds/static/js/453.69f3745b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f986a8b.css",
-    "static/js/main.c0d955b2.js"
+    "static/js/main.203ffa8f.js"
   ]
 }
