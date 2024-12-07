@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FarmMinds/static/css/main.7f986a8b.css",
-    "main.js": "/FarmMinds/static/js/main.7bb169b6.js",
+    "main.css": "/FarmMinds/static/css/main.e5e804f2.css",
+    "main.js": "/FarmMinds/static/js/main.5095129b.js",
     "static/js/453.69f3745b.chunk.js": "/FarmMinds/static/js/453.69f3745b.chunk.js",
     "static/media/cover2.jpg": "/FarmMinds/static/media/cover2.b20effc4937036e1e403.jpg",
     "static/media/carrots.jpg": "/FarmMinds/static/media/carrots.e5ff5adbd961e025250e.jpg",
@@ -20,17 +20,16 @@
     "static/media/s6.jpg": "/FarmMinds/static/media/s6.fdbd0b1a6b6a00636570.jpg",
     "static/media/s1.jpg": "/FarmMinds/static/media/s1.e51f9d95bfefd3402c3f.jpg",
     "static/media/berries.jpg": "/FarmMinds/static/media/berries.bae9ef3d0f91ed6e287e.jpg",
-    "static/media/hero-farm.jpg": "/FarmMinds/static/media/hero-farm.46d684f11afe2ae6baac.jpg",
     "static/media/herbs.jpg": "/FarmMinds/static/media/herbs.dc3462726e462d039374.jpg",
     "static/media/fruits.jpg": "/FarmMinds/static/media/fruits.abf60e6c06857e900fa1.jpg",
     "static/media/nuts.jpeg": "/FarmMinds/static/media/nuts.b35ca94c175521a038f8.jpeg",
     "index.html": "/FarmMinds/index.html",
-    "main.7f986a8b.css.map": "/FarmMinds/static/css/main.7f986a8b.css.map",
-    "main.7bb169b6.js.map": "/FarmMinds/static/js/main.7bb169b6.js.map",
+    "main.e5e804f2.css.map": "/FarmMinds/static/css/main.e5e804f2.css.map",
+    "main.5095129b.js.map": "/FarmMinds/static/js/main.5095129b.js.map",
     "453.69f3745b.chunk.js.map": "/FarmMinds/static/js/453.69f3745b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f986a8b.css",
-    "static/js/main.7bb169b6.js"
+    "static/css/main.e5e804f2.css",
+    "static/js/main.5095129b.js"
   ]
 }
